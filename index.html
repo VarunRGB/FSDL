@@ -1,9 +1,229 @@
-<html>
-	<head>
-		<title> Barun </title>
-	</head>
-	
-	<body>
-		<p> Hello </p>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varun Singh - Resume</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .resume {
+            max-width: 900px;
+            background: #ffffff;
+            margin: 40px auto;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        .location {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .contact {
+            font-size: 14px;
+            margin-top: 8px;
+        }
+
+        .contact a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 28px;
+        }
+
+        section h2 {
+            font-size: 20px;
+            border-bottom: 2px solid #0066cc;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            color: #0066cc;
+        }
+
+        .item {
+            margin-bottom: 16px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .item-header h3 {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .item-header span {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .item h3 span {
+            font-weight: 400;
+            color: #555;
+            font-size: 14px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .resume {
+                padding: 25px;
+            }
+
+            header h1 {
+                font-size: 26px;
+            }
+
+            .item-header {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="resume">
+
+    <header>
+        <h1>Varun Singh</h1>
+        <p class="location">Hyderabad, Telangana</p>
+        <p class="contact">
+            📞 9704527411 |
+            ✉️ varun071005@gmail.com |
+            <a href="https://linkedin.com/in/varun-singh" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/VarunRGB" target="_blank">GitHub</a>
+        </p>
+    </header>
+
+    <section>
+        <h2>Education</h2>
+
+        <div class="item">
+            <div class="item-header">
+                <h3>MIT WPU</h3>
+                <span>Aug 2023 – Present</span>
+            </div>
+            <p>Bachelor of Technology in Computer Science</p>
+            <p><strong>CGPA:</strong> 8.53 | Pune, Maharashtra</p>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <h3>Vikas - The Concept School</h3>
+                <span>May 2021</span>
+            </div>
+            <p>School | Hyderabad, Telangana</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Work Experience</h2>
+
+        <div class="item">
+            <div class="item-header">
+                <h3>Precision Kinetica — Web Development Intern</h3>
+                <span>Aug 2025 – Oct 2025</span>
+            </div>
+            <ul>
+                <li>Designed and developed a fully responsive landing page from scratch through deployment.</li>
+                <li>Optimized UI/UX, performance, and cross-browser compatibility.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+
+        <div class="item">
+            <h3>SmartRecipe <span>| React, Flask, SQLAlchemy</span></h3>
+            <ul>
+                <li>Built a full-stack recipe recommendation platform showing discounted recipes.</li>
+                <li>Implemented dynamic filters for ingredients, pricing, and calories.</li>
+                <li>Managed APIs and real-time updates using Flask and SQLAlchemy.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <h3>MiniCollabApp <span>| PHP, MySQL, HTML, CSS, JavaScript</span></h3>
+            <ul>
+                <li>Developed a role-based task management system with admin and user dashboards.</li>
+                <li>Implemented authentication, task CRUD, and priority sorting.</li>
+                <li>Used PHP sessions and Fetch API for async operations.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <h3>SignConnect <span>| Android Studio, Java, ISL, Voice Recognition</span></h3>
+            <ul>
+                <li>Created an educational app for learning Indian Sign Language.</li>
+                <li>Integrated voice-to-sign translation with 99% accuracy.</li>
+                <li>Designed interactive learning games.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Technical Skills</h2>
+        <p><strong>Languages:</strong> C++, Python, JavaScript, React, MySQL, PHP</p>
+        <p><strong>Libraries:</strong> OpenCV, Pyttsx3, SpeechRecognition, smtplib, CSV Handling, Wikipedia API, Day.js, Jasmine</p>
+        <p><strong>Domains:</strong> Web Development, App Development, Computer Vision, Speech / Voice Recognition</p>
+    </section>
+
+    <section>
+        <h2>Achievements</h2>
+        <ul>
+            <li>Top 8% CodeChef globally with peak rating of 1600.</li>
+            <li>Institute Topper – ICPC 2025 Regionals (AIR 1377).</li>
+            <li>3rd place in Smart India Hackathon (College Level).</li>
+        </ul>
+    </section>
+
+</div>
+
+</body>
 </html>
+
